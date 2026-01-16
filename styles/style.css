@@ -16,6 +16,11 @@ button{
    margin-top: 32px;
    margin-bottom: 50px;
 }
+.p{
+  font-size: 1rem;
+  line-height: 26px;
+  color:#727272;
+}
 
 /* header style */
 header{
@@ -59,11 +64,7 @@ header{
   font-weight: bold;
   color:#131313;
 }
-.banner p{
-  font-size: 1rem;
-  line-height: 26px;
-  color:#727272;
-}
+
 .banner-img{
    width: 100%; 
    max-width: 1440px;
@@ -75,11 +76,44 @@ header{
   height: auto;
   display: block;
 }
+/* section team */
+.section-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:73px;
+  padding:5.32rem 18.82rem 8.13rem 18.82rem;
+  margin:0 auto;
+}
+.team-img{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+}
+.team-content h1{
+  font-size: 2.82rem;
+  font-weight: bold;
+}
+#Quick{
+  color: #727272;
+  font-weight: 400;
+
+}
+#Features{
+  color: #FF900E;
+}
 
 /* responsive media query */
 @media  screen and (max-width:576px) {
     .navbar , .menu{
       flex-direction: column;
     }  
+    section{
+      flex-direction: row;
+    }
+    .team-img{
+      grid-template-columns: repeat(1,1fr);
+    }
+
 }
 
