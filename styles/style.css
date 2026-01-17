@@ -1,56 +1,70 @@
 /* shared style */
+*{
+  margin: 0;
+  padding: 0;
+}
 .work-sans {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
-
+.container{
+   /* max-width: 120rem; */
+   max-width: 1920px;
+   width:100%;
+   margin:0 auto;
+}
 button{
    font-size: 1.25rem;
    font-weight: 600;
    color:#FFFFFF;
-   padding: 21px 19px 24px 25px;
+   padding: 1.32rem  1.19rem  1.5rem  1.6rem;
    border: none;
    background-color: #FF900E;
    border-radius: 8%;
-   margin-top: 32px;
-   margin-bottom: 50px;
+   margin-top: 2rem;
+   margin-bottom: 3.13rem;
 }
 .p{
   font-size: 1rem;
-  line-height: 26px;
+  line-height: 1.6rem;
   color:#727272;
 }
 
 /* header style */
 header{
   background-color: rgba(255, 144, 14, 0.1);
-  margin: 0 auto;
-  max-width: 1920px;
-  padding: 0 240px;
+  width: 100%;
+  /* margin: 0 auto; */
+  /* max-width: 120rem; */
+  /* padding: 0 15rem; */
+  padding: 0 2rem;
 }
 .navbar{
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
+  align-items: center;
+  padding: 3.94rem 15rem;
 }
 .navbar h3{
   font-size: 2.82rem;
   font-weight: bold;
   color:#131313;
-  /* width:303px; */
+  width:18.94rem;
+  text-wrap:nowrap;
 }
 .menu{
   display: flex;
   font-size: 1.13rem;
-  line-height: 26px;
+  line-height: 1.625rem;
   color:#424242;
   justify-content: space-between;
-  gap:45px;
+  gap: 2.82em;
   align-items: center;
   
 }
 
-.menu div a{
+.menu  a{
   text-decoration: none;
 }
 .banner{
@@ -58,37 +72,43 @@ header{
   flex-direction: column;
   align-items: center;
   text-align: center;
+  /* gap: 2rem; */
 }
 .banner h1{
   font-size: 4rem;
   font-weight: bold;
   color:#131313;
+
+}
+.banner-text .p{
+  margin-top: 2rem;
 }
 
 .banner-img{
    width: 100%; 
-   max-width: 1440px;
+   max-width: 90rem;
    margin:0 auto;
 
 }
  .banner-img img{
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 /* section team */
 .section-1{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap:73px;
+  gap:4.56rem;
   padding:5.32rem 18.82rem 8.13rem 18.82rem;
   margin:0 auto;
 }
 .team-img{
   display: grid;
   grid-template-columns:repeat(2,1fr);
-  gap:24px;
+  gap:1.5rem;
 }
 .team-content h1{
   font-size: 2.82rem;
@@ -105,15 +125,72 @@ header{
 
 /* responsive media query */
 @media  screen and (max-width:576px) {
-    .navbar , .menu{
+    header{
+      padding: 1rem;
+    }
+    .navbar{
+      padding: 1rem;
+    }
+    
+    .navbar , .menu , .banner{
       flex-direction: column;
+      gap:0px;
     }  
-    section{
-      flex-direction: row;
+    .menu{
+      text-wrap: nowrap;
+    }
+    /* .banner-img img{
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    } */
+     button{
+      font-size: 1rem;
+      padding: .8rem 1rem;
+     }
+    .section-1{
+      padding:5rem 2rem;
+      flex-direction:column ;
     }
     .team-img{
       grid-template-columns: repeat(1,1fr);
     }
 
+}
+/* section-02 */
+.section-2{
+  max-width: 1440px;
+  width:100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 1059px;
+}
+.Features{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:9.125rem;
+  text-align: left;
+}
+.Features h2{
+  font-size: 2.82rem;
+  padding-left: 1.63rem;
+  padding-bottom: 1.5rem;
+  padding-top: 2.44rem;
+}
+.cards{
+  padding-top: 1.88rem;
+}
+.card h3{
+  font-size: 1.25rem;
+  font-weight: 600;
+
+}
+.card{
+  width:36.625rem;
+  max-height:10.6875rem;
+  padding: 1.875rem;
+  box-shadow: 0 4px 30px 0 #d5d1d1;
+  margin-bottom: 1.25rem;
 }
 
