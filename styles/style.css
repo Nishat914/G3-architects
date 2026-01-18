@@ -122,6 +122,66 @@ header{
 #Features{
   color: #FF900E;
 }
+/* section-02 */
+.section-2{
+  max-width: 1440px;
+  max-height: 1059px;
+  width:100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.Features{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:9.125rem;
+  text-align: left;
+}
+.Features h2{
+  font-size: 2.82rem;
+  padding-left: 1.63rem;
+  padding-bottom: 1.5rem;
+  padding-top: 2.44rem;
+}
+.architect-content{
+  width: 100%;
+}
+.architect-img{
+  position: relative;
+}
+.architect-img img{
+  width: 708px;
+  max-height: 982px;
+  width:100%;
+}
+
+.btn{
+  position: absolute;
+  margin-left: -9.38rem;
+  margin-top: -9.38rem;
+  padding: 2.81rem 2.63rem;
+  
+}
+.btn span{
+  font-size: 4rem;
+  font-weight: bold;
+}
+.cards{
+  padding-top: 1.88rem;
+}
+.card h3{
+  font-size: 1.25rem;
+  font-weight: 600;
+
+}
+.card{
+  width:36.625rem;
+  max-height:10.6875rem;
+  padding: 1.875rem;
+  box-shadow: 0 4px 30px 0 #d5d1d1;
+  margin-bottom: 1.25rem;
+}
 
 /* responsive media query */
 @media  screen and (max-width:576px) {
@@ -150,47 +210,13 @@ header{
      }
     .section-1{
       padding:5rem 2rem;
-      flex-direction:column ;
+      flex-direction:column-reverse ;
     }
     .team-img{
       grid-template-columns: repeat(1,1fr);
+      margin: 0 auto;
     }
 
 }
-/* section-02 */
-.section-2{
-  max-width: 1440px;
-  width:100%;
-  margin: 0 auto;
-  text-align: center;
-  height: 1059px;
-}
-.Features{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap:9.125rem;
-  text-align: left;
-}
-.Features h2{
-  font-size: 2.82rem;
-  padding-left: 1.63rem;
-  padding-bottom: 1.5rem;
-  padding-top: 2.44rem;
-}
-.cards{
-  padding-top: 1.88rem;
-}
-.card h3{
-  font-size: 1.25rem;
-  font-weight: 600;
 
-}
-.card{
-  width:36.625rem;
-  max-height:10.6875rem;
-  padding: 1.875rem;
-  box-shadow: 0 4px 30px 0 #d5d1d1;
-  margin-bottom: 1.25rem;
-}
 
